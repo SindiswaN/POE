@@ -1,0 +1,12 @@
+﻿<Window x:Class="RecipeApp.ResetQuantitiesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Reset Quantities" Height="200" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Select Recipe:" FontSize="14" FontWeight="Bold"/>
+            <ComboBox Name="RecipesComboBox" Margin="0 0 0 10"/>
+            <Button Content="Reset Quantities" Click="ResetQuantities_Click" FontSize="16" FontWeight="Bold"/>
+        </StackPanel>
+    </Grid>
+</Window>

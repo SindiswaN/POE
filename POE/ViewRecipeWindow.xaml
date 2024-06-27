@@ -1,0 +1,32 @@
+﻿<Window x:Class="RecipeApp.ViewRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="View Recipe" Height="450" Width="400">
+    <Grid Background="#FFE5E4E2">
+        <StackPanel Margin="10">
+            <Label Name="RecipeNameLabel" FontWeight="Bold" FontSize="16"/>
+            <Label Content="Ingredients:" FontWeight="Bold" FontSize="14" />
+            <ListView Name="IngredientsListView" Margin="0 0 0 10">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="100"/>
+                        <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding ScaledQuantity}" Width="60"/>
+                        <GridViewColumn Header="Unit" DisplayMemberBinding="{Binding Unit}" Width="60"/>
+                        <GridViewColumn Header="Calories" DisplayMemberBinding="{Binding ScaledCalories}" Width="60"/>
+                        <GridViewColumn Header="Food Group" DisplayMemberBinding="{Binding FoodGroup}" Width="100"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Label Content="Steps:" FontWeight="Bold" FontSize="14" />
+            <ListView Name="StepsListView" Margin="0 0 0 10">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Step Number" DisplayMemberBinding="{Binding StepNumber}" Width="80"/>
+                        <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" Width="240"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Label Name="TotalCaloriesLabel"/>
+        </StackPanel>
+    </Grid>
+</Window>

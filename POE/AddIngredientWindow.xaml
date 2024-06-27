@@ -1,0 +1,29 @@
+﻿<Window x:Class="RecipeApp.AddIngredientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Ingredient" Height="435" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Name:" FontWeight="Bold" FontSize="14"/>
+            <TextBox Name="NameTextBox" Margin="0 0 0 10"/>
+            <Label Content="Quantity:" FontWeight="Bold" FontSize="14"/>
+            <TextBox Name="QuantityTextBox" Margin="0 0 0 10"/>
+            <Label Content="Unit:" FontWeight="Bold" FontSize="14"/>
+            <TextBox Name="UnitTextBox" Margin="0 0 0 10"/>
+            <Label Content="Calories:" FontWeight="Bold" FontSize="14"/>
+            <TextBox Name="CaloriesTextBox" Margin="0 0 0 10"/>
+            <Label Content="Food Group:" FontWeight="Bold" FontSize="14"/>
+            <ComboBox Name="FoodGroupComboBox" Margin="0 0 0 10">
+                <ComboBoxItem Content="Vegetables"/>
+                <ComboBoxItem Content="Fruits"/>
+                <ComboBoxItem Content="Grains"/>
+                <ComboBoxItem Content="Protein Foods"/>
+                <ComboBoxItem Content="Dairy"/>
+                <ComboBoxItem Content="Oils and Solid Fats"/>
+                <ComboBoxItem Content="Added Sugars"/>
+                <ComboBoxItem Content="Beverages"/>
+            </ComboBox>
+            <Button Content="Add Ingredient" Click="AddIngredient_Click" FontWeight="Bold" FontSize="16"/>
+        </StackPanel>
+    </Grid>
+</Window>

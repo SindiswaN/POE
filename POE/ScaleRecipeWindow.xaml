@@ -1,0 +1,14 @@
+﻿<Window x:Class="RecipeApp.ScaleRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Scale Recipe" Height="200" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Select Recipe:" FontWeight="Bold" />
+            <ComboBox Name="RecipesComboBox" Margin="0 0 0 10"/>
+            <Label Content="Scaling Factor:" FontWeight="Bold" />
+            <TextBox Name="ScalingFactorTextBox" Margin="0 0 0 10"/>
+            <Button Content="Scale" Click="Scale_Click" FontWeight="Bold" />
+        </StackPanel>
+    </Grid>
+</Window>

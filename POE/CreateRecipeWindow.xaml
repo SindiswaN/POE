@@ -1,0 +1,34 @@
+﻿<Window x:Class="RecipeApp.CreateRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Create New Recipe" Height="450" Width="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Recipe Name:" FontWeight="Bold" FontSize="14" />
+            <TextBox Name="RecipeNameTextBox" Margin="0 0 0 10"/>
+            <Label Content="Ingredients:" FontWeight="Bold" FontSize="14" />
+            <ListView Name="IngredientsListView" Margin="0 0 0 20">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="100"/>
+                        <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Quantity}" Width="60"/>
+                        <GridViewColumn Header="Unit" DisplayMemberBinding="{Binding Unit}" Width="60"/>
+                        <GridViewColumn Header="Calories" DisplayMemberBinding="{Binding Calories}" Width="60"/>
+                        <GridViewColumn Header="Food Group" DisplayMemberBinding="{Binding FoodGroup}" Width="90" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Button Content="Add Ingredient" Click="AddIngredient_Click" Margin="0 0 0 10" FontWeight="Bold" FontSize="14" Height="25" />
+            <Label Content="Steps:" FontWeight="Bold" FontSize="14" />
+            <ListView Name="StepsListView" Margin="0 0 0 10" FontWeight="Bold" Height="25" FontSize="14">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Step" DisplayMemberBinding="{Binding}" Width="373" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Button Content="Add Step" Click="AddStep_Click" Margin="0 0 0 10" FontWeight="Bold" Height="25" FontSize="14" />
+            <Button Content="Save Recipe" Click="SaveRecipe_Click" FontWeight="Bold" FontSize="14" Height="25" />
+        </StackPanel>
+    </Grid>
+</Window>

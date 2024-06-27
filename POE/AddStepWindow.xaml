@@ -1,0 +1,12 @@
+﻿<Window x:Class="RecipeApp.AddStepWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Step" Height="200" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Step Description:" FontWeight="Bold"/>
+            <TextBox Name="DescriptionTextBox" Margin="0 0 0 10"/>
+            <Button Content="Add Step" Click="AddStep_Click" FontWeight="Bold" FontSize="14"/>
+        </StackPanel>
+    </Grid>
+</Window>

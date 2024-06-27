@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddIngredientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddStepWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ClearRecipeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CreateRecipeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FilterRecipesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ListRecipesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ResetQuantitiesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ScaleRecipeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SelectRecipeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewRecipeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddIngredientWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddStepWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ClearRecipeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreateRecipeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FilterRecipesWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListRecipesWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ResetQuantitiesWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ScaleRecipeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SelectRecipeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewRecipeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
