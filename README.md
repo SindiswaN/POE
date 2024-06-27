@@ -20,7 +20,7 @@ Usage:
 - Click the Create New Recipe button.
 - Enter the recipe name, add ingredients and steps, and click Save Recipe.
 
-2List Recipes:
+2 List Recipes:
 - Click the List Recipes button to view all saved recipes.
 
 Select Recipe:
